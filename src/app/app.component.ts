@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'pm-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+  <div><h1>{{pageTitile}}</h1>
+    <div>My First Component</div>
+  </div>
+  `
 })
 export class AppComponent {
-  title = 'Angular_Getting_Started_Course';
+  pageTitile: string = 'Acme Product Management';
 }
