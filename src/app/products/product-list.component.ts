@@ -6,12 +6,13 @@ import { ConvertToSpacesPipe } from "../shared/convert-to-spaces.pipe";
 import { StarComponent } from "../shared/star.component";
 import { ProductService } from "./product.service";
 import { Subscription } from "rxjs";
+import { RouterModule } from "@angular/router";
 
 @Component({
     standalone: true,
     templateUrl: './product-list.component.html',
     styleUrl: './product-list.component.css',
-    imports: [CommonModule, FormsModule, ConvertToSpacesPipe, StarComponent]
+    imports: [CommonModule, FormsModule, ConvertToSpacesPipe, StarComponent, RouterModule]
 })
 export class ProductListComponent implements OnInit, OnDestroy {
   pageTitle: string = 'Product List';
