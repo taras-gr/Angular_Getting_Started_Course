@@ -8,7 +8,6 @@ import { ProductService } from "./product.service";
 import { Subscription } from "rxjs";
 
 @Component({
-    selector: 'pm-products',
     standalone: true,
     templateUrl: './product-list.component.html',
     styleUrl: './product-list.component.css',
